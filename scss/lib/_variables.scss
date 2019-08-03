@@ -1,3 +1,31 @@
 // --------------------------------
           // Variables
 // ---------------------------------
+
+
+// colores
+
+$color-black: #101010;
+$color-white: rgb(255,255,255);
+$color-blue: #0074D9;
+$color-yellow: #FFDC00;
+$color-success: #3D9970;
+$color-gray: #C0C0C0;
+$color-show-code: #081345;
+$color-red: #FF000F;
+
+
+// typography
+
+$font-weight-title: bold;
+$font-page: 400;
+$fontpagefamily: Arial;
+$fontsizetitles: 50px;
+$fontsizepage: 18px;
+
+// viewport
+
+$lg-port: 992px;
+$md-port: 768px;
+$sm-port: 576px;
+$presentation: 70vh;

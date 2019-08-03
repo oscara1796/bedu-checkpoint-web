@@ -1,0 +1,218 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.all-container {
+  margin: 0 auto;
+  width: 70%;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.show-code {
+  background-color: #081345;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .show-code {
+    font-size: 10px;
+  }
+}
+
+.navbar {
+  width: 100%;
+  background: #101010;
+  display: flex;
+  padding: 10px 0px;
+}
+.navbar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar__list__element {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navbar__list__element a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar__list__element a:hover {
+  color: #C0C0C0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.header__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  filter: brightness(50%);
+}
+.header__text {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+.header__text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0;
+}
+.header__button {
+  background-color: white;
+  color: #101010;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .header__button {
+    width: 80%;
+  }
+}
+.header__button:hover {
+  background-color: #101010;
+  color: white;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #C0C0C0;
+  padding: 10px;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  margin: 10px 0px;
+}
+.jumbotron__line {
+  background-color: #101010;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0px;
+}
+.jumbotron__button {
+  background-color: white;
+  color: #101010;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  font-weight: 400;
+}
+.jumbotron__button {
+  background-color: white;
+  color: #101010;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron__button {
+    width: 80%;
+    align-self: center;
+  }
+}
+.jumbotron__button:hover {
+  background-color: #101010;
+  color: white;
+}
+
+.breadcrumbs {
+  padding: 10px 0px;
+}
+.breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #0074D9;
+  font-weight: 400;
+}
+.breadcrumbs a:hover {
+  color: #C0C0C0;
+}
+.breadcrumbs .active {
+  color: #C0C0C0;
+}
+
+.buttons__item {
+  background-color: white;
+  color: #101010;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  font-weight: 400;
+}
+.buttons .button1 {
+  background-color: #0074D9;
+}
+.buttons .button2 {
+  background-color: #C0C0C0;
+  color: #101010;
+}
+.buttons .button3 {
+  background-color: #3D9970;
+  color: white;
+}
+.buttons .button4 {
+  background-color: #FF000F;
+  color: white;
+}
+.buttons .button5 {
+  background-color: #FFDC00;
+  color: white;
+}
+.buttons .button6 {
+  background-color: #081345;
+  color: white;
+}
+.buttons .button7 {
+  border: 1px solid black;
+}
+.buttons .button8 {
+  background-color: #101010;
+  color: white;
+}
+.buttons .button9 {
+  color: #0074D9;
+  text-decoration: underline;
+}
+.buttons__item:hover {
+  background-color: #101010;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

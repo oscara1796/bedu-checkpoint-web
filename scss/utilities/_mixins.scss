@@ -1,0 +1,17 @@
+
+@mixin respond-to($breakpoint){
+  @media only screen and (max-width: $breakpoint){
+    @content;
+  }
+}
+
+@mixin button{
+  background-color: $color-white;
+  color: $color-black;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  font-weight: 400;
+}
