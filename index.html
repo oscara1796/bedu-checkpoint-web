@@ -571,7 +571,7 @@
           <section class="cards">
             <div class="card">
               <figure class="card__image--top">
-                  <img src="" alt="">
+                  <img src="images/header-image.jpg" alt="">
               </figure>
               <div class="card__text">
                 <h3 class="card__title">
@@ -581,17 +581,200 @@
                   hello i am your content ahuaaa!!
                 </p>
               </div>
+              <button  class="card__button"type="button" name="button">Learn more</button>
+            </div>
+            <div class="card">
+              <figure class="card__image--top">
+                  <img src="images/header-image.jpg" alt="">
+              </figure>
+              <div class="card__text">
+                <h3 class="card__title">
+                  Card-title
+                </h3>
+                <p class="card__text--content">
+                  hello i am your content ahuaaa!!
+                </p>
+              </div>
+              <button  class="card__button"type="button" name="button">Learn more</button>
+            </div>
+            <div class="card">
+              <figure class="card__image--top">
+                  <img src="images/header-image.jpg" alt="">
+              </figure>
+              <div class="card__text">
+                <h3 class="card__title">
+                  Card-title
+                </h3>
+                <p class="card__text--content">
+                  hello i am your content ahuaaa!!
+                </p>
+              </div>
+              <button  class="card__button"type="button" name="button">Learn more</button>
+            </div>
+            <div class="card">
+              <figure class="card__image--top">
+                  <img src="images/header-image.jpg" alt="">
+              </figure>
+              <div class="card__text">
+                <h3 class="card__title">
+                  Card-title
+                </h3>
+                <p class="card__text--content">
+                  hello i am your content ahuaaa!!
+                </p>
+              </div>
+              <button  class="card__button"type="button" name="button">Learn more</button>
             </div>
           </section>
+          <xmp class="show-code">
+            <!-- html -->
+            <section class="cards">
+              <div class="card">
+                <figure class="card__image--top">
+                    <img src="images/header-image.jpg" alt="">
+                </figure>
+                <div class="card__text">
+                  <h3 class="card__title">
+                    Card-title
+                  </h3>
+                  <p class="card__text--content">
+                    hello i am your content ahuaaa!!
+                  </p>
+                </div>
+                <button class="card__button"type="button" name="button">
+                  Learn more</button>
+              </div>
+
+            </section>
+            <!-- /html -->
+            <!-- css -->
+            .cards {
+              display: flex;
+              justify-content: center;
+            }
+            @media only screen and (max-width: 768px) {
+              .cards {
+                flex-direction: column;
+              }
+            }
+
+            .card {
+              width: 200px;
+              border: 1px solid #101010;
+              border-radius: 10px;
+              padding: 0px;
+              margin: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            @media only screen and (max-width: 768px) {
+              .card {
+                width: 100%;
+              }
+            }
+            .card__title {
+              text-align: center;
+              padding: 10px;
+              margin: 0;
+            }
+            .card__text--content {
+              padding: 10px;
+              text-align: center;
+            }
+            .card__image--top {
+              margin: 0;
+              width: 100%;
+            }
+            .card__image--top img {
+              width: 100%;
+              object-fit: cover;
+              border-radius: 5px;
+            }
+            .card__button {
+              background-color: white;
+              color: #101010;
+              margin: 10px 0px;
+              padding: 10px;
+              border-radius: 5px;
+              border: none;
+              width: 100px;
+              font-weight: 400;
+              background-color: #0074D9;
+              color: white;
+              padding: 10px;
+            }
+            .card__button:hover {
+              background-color: #101010;
+              color: white;
+            }
+
+            /*# sourceMappingURL=index.css.map */
+
+            <!-- /css -->
+          </xmp>
           <hr>
           <h1>Containers</h1>
           <section class="containers">
-
+              <div class="containers__container1">
+                <h3>Hello i am a container</h3>
+              </div>
+              <div class="containers__container2">
+                <h3>hello i am a container</h3>
+              </div>
           </section>
+          <xmp class="show-code">
+            <!-- html -->
+            <section class="containers">
+                <div class="containers__container1">
+                  <h3>Hello i am a container</h3>
+                </div>
+                <div class="containers__container2">
+                  <h3>hello i am a container</h3>
+                </div>
+            </section>
+            <!-- /html -->
+            <!-- css -->
+            .containers {
+              background-color: #C0C0C0;
+              display: flex;
+              height: 30vh;
+            }
+            .containers__container1 {
+              background-color: #0074D9;
+              text-align: center;
+              color: white;
+              width: 30%;
+              height: 30vh;
+            }
+            .containers__container2 {
+              background-color: #FFDC00;
+              color: #101010;
+              text-align: center;
+              width: 50%;
+              height: 30vh;
+              margin-left: auto;
+            }
+            <!-- /css -->
+          </xmp>
           <hr>
           <h1>Grid</h1>
           <section class="grid">
-
+            <div class="card--grid">
+              <figure class="card__image--top">
+                  <img src="images/header-image.jpg" alt="">
+              </figure>
+              <div class="card__text">
+                <h3 class="card__title">
+                  Card-title
+                </h3>
+                <p class="card__text--content">
+                  hello i am your content ahuaaa!!
+                </p>
+              </div>
+              <button class="card__button"type="button" name="button">
+                Learn more</button>
+            </div>
           </section>
       </main>
     </div>
