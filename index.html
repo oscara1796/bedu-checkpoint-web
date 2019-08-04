@@ -267,35 +267,321 @@
             <button class="buttons__item button8">Dark</button>
             <button class="buttons__item button9">link</button>
           </section>
+          <xmp class="show-code">
+            <!-- html -->
+            <section class="buttons">
+              <button class="buttons__item button1">Primary</button>
+              <button class="buttons__item button2">Secondary</button>
+              <button class="buttons__item button3">Success</button>
+              <button class="buttons__item button4">Danger</button>
+              <button class="buttons__item button5">Warning</button>
+              <button class="buttons__item button6">info</button>
+              <button class="buttons__item button7">light</button>
+              <button class="buttons__item button8">Dark</button>
+              <button class="buttons__item button9">link</button>
+            </section>
+            <!-- /html -->
+            <!-- css -->
+            .buttons__item {
+              background-color: white;
+              color: #101010;
+              margin: 10px 0px;
+              padding: 10px;
+              border-radius: 5px;
+              border: none;
+              width: 100px;
+              font-weight: 400;
+            }
+            .buttons .button1 {
+              background-color: #0074D9;
+            }
+            .buttons .button2 {
+              background-color: #C0C0C0;
+              color: #101010;
+            }
+            .buttons .button3 {
+              background-color: #3D9970;
+              color: white;
+            }
+            .buttons .button4 {
+              background-color: #FF000F;
+              color: white;
+            }
+            .buttons .button5 {
+              background-color: #FFDC00;
+              color: white;
+            }
+            .buttons .button6 {
+              background-color: #081345;
+              color: white;
+            }
+            .buttons .button7 {
+              border: 1px solid black;
+            }
+            .buttons .button8 {
+              background-color: #101010;
+              color: white;
+            }
+            .buttons .button8:hover {
+              background-color: white;
+              color: #101010;
+            }
+            .buttons .button9 {
+              color: #0074D9;
+              text-decoration: underline;
+            }
+            .buttons__item:hover {
+              background-color: #101010;
+              color: white;
+            }
+            <!-- /css -->
+          </xmp>
           <hr>
           <h1>This are titles</h1>
           <section class="titles">
-
+              <h1>This is a title</h1>
+              <h2>This is a title</h2>
+              <h3>This is a title</h3>
+              <h4>This is a title</h4>
+              <h5>This is a title</h5>
+              <h6>This is a title</h6>
           </section>
+          <xmp class="show-code">
+            <!-- html -->
+            <section class="titles">
+                <h1>This is a title</h1>
+                <h2>This is a title</h2>
+                <h3>This is a title</h3>
+                <h4>This is a title</h4>
+                <h5>This is a title</h5>
+                <h6>This is a title</h6>
+            </section>
+            <!-- /html -->
+          </xmp>
           <hr>
           <h1>Parrafos</h1>
           <section class="parrafos">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-               nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              quis nostrud <span class="parrafos__text--normal">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span> eu fugiat
+               nulla pariatur. Excepteur sint occaecat
+               <br><br>cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.</p>
           </section>
+          <xmp class="show-code">
+            <!-- html -->
+            <section class="parrafos">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
+                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud <span class="parrafos__text--normal">exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                 dolore</span> eu fugiat
+                 nulla pariatur. Excepteur sint occaecat
+                 <br>cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.</p>
+            </section>
+            <!-- /html -->
+            <!-- css -->
+            .parrafos {
+              font-style: italic;
+              color: #C0C0C0;
+            }
+            .parrafos__text--normal {
+              font-style: normal;
+              color: #0074D9;
+            }
+            <!-- /css -->
+          </xmp>
           <hr>
           <h1>Links</h1>
           <section class="links">
-
+              <ul>
+                <li><a href="">This is a link</a></li>
+                <li><a href="">This is a link</a></li>
+                <li><a href="">This is a link</a></li>
+              </ul>
           </section>
+          <xmp class="show-code">
+            <section class="links">
+                <ul>
+                  <li><a href="">This is a link</a></li>
+                  <li><a href="">This is a link</a></li>
+                  <li><a href="">This is a link</a></li>
+                </ul>
+            </section>
+          </xmp>
           <hr>
           <h1>Card with no image</h1>
           <section class="cards-noimage">
-
+              <div class="noimage__card">
+                <div class="noimage__card__text">
+                  <h3 class="noimage__card__title">
+                    Card-title
+                  </h3>
+                  <p class="noimage__card__text--content">
+                    hello i am your content ahuaaa!!
+                  </p>
+                </div>
+                <button  class="noimage__card__button" type="button" name="button">Clickeame</button>
+              </div>
+              <div class="noimage__card">
+                <div class="noimage__card__text">
+                  <h3 class="noimage__card__title">
+                    Card-title
+                  </h3>
+                  <p class="noimage__card__text--content">
+                    hello i am your content ahuaaa!!
+                  </p>
+                </div>
+                <button class="noimage__card__button" type="button" name="button">Clickeame</button>
+              </div>
+              <div class="noimage__card">
+                <div class="noimage__card__text">
+                  <h3 class="noimage__card__title">
+                    Card-title
+                  </h3>
+                  <p class="noimage__card__text--content">
+                    hello i am your content ahuaaa!!
+                  </p>
+                </div>
+                <button class="noimage__card__button" type="button" name="button">Clickeame</button>
+              </div>
+              <div class="noimage__card">
+                <div class="noimage__card__text">
+                  <h3 class="noimage__card__title">
+                    Card-title
+                  </h3>
+                  <p class="noimage__card__text--content">
+                    hello i am your content ahuaaa!!
+                  </p>
+                </div>
+                <button class="noimage__card__button" type="button" name="button">
+                  Clickeame</button>
+              </div>
           </section>
+          <xmp class="show-code">
+            <!-- html -->
+            <section class="cards-noimage">
+                <div class="noimage__card">
+                  <div class="noimage__card__text">
+                    <h3 class="noimage__card__title">
+                      Card-title
+                    </h3>
+                    <p class="noimage__card__text--content">
+                      hello i am your content ahuaaa!!
+                    </p>
+                  </div>
+                  <button  class="noimage__card__button" type="button" name="button">
+                    Clickeame</button>
+                </div>
+                <div class="noimage__card">
+                  <div class="noimage__card__text">
+                    <h3 class="noimage__card__title">
+                      Card-title
+                    </h3>
+                    <p class="noimage__card__text--content">
+                      hello i am your content ahuaaa!!
+                    </p>
+                  </div>
+                  <button class="noimage__card__button" type="button" name="button">
+                    Clickeame</button>
+                </div>
+                <div class="noimage__card">
+                  <div class="noimage__card__text">
+                    <h3 class="noimage__card__title">
+                      Card-title
+                    </h3>
+                    <p class="noimage__card__text--content">
+                      hello i am your content ahuaaa!!
+                    </p>
+                  </div>
+                  <button class="noimage__card__button" type="button" name="button">
+                    Clickeame</button>
+                </div>
+                <div class="noimage__card">
+                  <div class="noimage__card__text">
+                    <h3 class="noimage__card__title">
+                      Card-title
+                    </h3>
+                    <p class="noimage__card__text--content">
+                      hello i am your content ahuaaa!!
+                    </p>
+                  </div>
+                  <button class="noimage__card__button" type="button" name="button">
+                    Clickeame</button>
+                </div>
+            </section>
+            <!-- /html -->
+            <!-- css -->
+            .cards-noimage {
+              display: flex;
+              justify-content: center;
+            }
+            @media only screen and (max-width: 768px) {
+              .cards-noimage {
+                flex-direction: column;
+                align-items: center;
+              }
+            }
+
+            .noimage__card {
+              width: 200px;
+              border: 1px solid #101010;
+              border-radius: 10px;
+              padding: 10px;
+              margin: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            @media only screen and (max-width: 768px) {
+              .noimage__card {
+                width: 100%;
+              }
+            }
+            .noimage__card h3 {
+              margin: 0;
+            }
+            .noimage__card__text--content, .noimage__card__title {
+              text-align: center;
+              border-radius: 5px;
+            }
+            .noimage__card__button {
+              background-color: white;
+              color: #101010;
+              margin: 10px 0px;
+              padding: 10px;
+              border-radius: 5px;
+              border: none;
+              width: 100px;
+              font-weight: 400;
+              background-color: #0074D9;
+            }
+            .noimage__card__button:hover {
+              background-color: #101010;
+              color: white;
+            }
+            <!-- /css -->
+          </xmp>
           <hr>
           <h1>Cards with image</h1>
           <section class="cards">
-
+            <div class="card">
+              <figure class="card__image--top">
+                  <img src="" alt="">
+              </figure>
+              <div class="card__text">
+                <h3 class="card__title">
+                  Card-title
+                </h3>
+                <p class="card__text--content">
+                  hello i am your content ahuaaa!!
+                </p>
+              </div>
+            </div>
           </section>
           <hr>
           <h1>Containers</h1>
@@ -310,7 +596,7 @@
       </main>
     </div>
   </body>
-  <script type="index.js">
+  <script type="text/javascript" src="index.js">
 
   </script>
 </html>

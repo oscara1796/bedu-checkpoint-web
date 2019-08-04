@@ -15,3 +15,14 @@
   width: 100px;
   font-weight: 400;
 }
+
+@mixin button--hover{
+  background-color: $color-black;
+  color: $color-white;
+}
+
+@mixin card{
+  width: 200px;
+  border: 1px solid $color-black;
+  border-radius: 10px;
+}

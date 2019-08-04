@@ -147,12 +147,11 @@ body{
     color: $color-blue;
     font-weight: 400;
   }
-  & a:hover{
+  & a:hover,
+  a.selected{
     color: $color-gray;
   }
-  &  .active{
-    color: $color-gray;
-  }
+
 
 }
 
@@ -195,6 +194,10 @@ body{
     background-color: $color-black;
     color: $color-white;
   }
+  .button8:hover{
+    background-color: $color-white;
+    color: $color-black;
+  }
   .button9{
     color: $color-blue;
     text-decoration: underline;
@@ -203,8 +206,55 @@ body{
     background-color: $color-black;
     color: $color-white;
   }
-  
+
 }
 
+// Aqui terminan los botones
 
-// Aqui termina los breadcrumbs__link
+.parrafos{
+  font-style: italic;
+  color: $color-gray;
+  &__text--normal{
+    font-style: normal;
+    color: $color-blue;
+  }
+}
+
+// Aqui acaban los parrafos
+
+
+.cards-noimage{
+  display: flex;
+  justify-content: center;
+  @include respond-to($md-port){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.noimage__card{
+  @include card;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include respond-to($md-port){
+    width: 100%;
+  }
+  & h3{
+    margin: 0;
+  }
+  &__text--content,
+  &__title{
+    text-align: center;
+    border-radius: 5px;
+  }
+  &__button{
+    @include button;
+    background-color: $color-blue;
+  }
+  &__button:hover{
+    @include button--hover;
+  }
+}
