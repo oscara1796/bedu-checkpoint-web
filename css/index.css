@@ -300,12 +300,12 @@ body {
     width: 100%;
   }
 }
-.card__title {
+.card__title, .grid__card__title {
   text-align: center;
   padding: 10px;
   margin: 0;
 }
-.card__text--content {
+.card__text--content, .grid__card__text--content {
   padding: 10px;
   text-align: center;
 }
@@ -318,7 +318,7 @@ body {
   object-fit: cover;
   border-radius: 5px;
 }
-.card__button {
+.card__button, .grid__card__button {
   background-color: white;
   color: #101010;
   margin: 10px 0px;
@@ -331,7 +331,7 @@ body {
   color: white;
   padding: 10px;
 }
-.card__button:hover {
+.card__button:hover, .grid__card__button:hover {
   background-color: #101010;
   color: white;
 }
@@ -355,6 +355,31 @@ body {
   width: 50%;
   height: 30vh;
   margin-left: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid__card {
+  border: 1px solid #101010;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid__card__button:hover {
+  background-color: #101010;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

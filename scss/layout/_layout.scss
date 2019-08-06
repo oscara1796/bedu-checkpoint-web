@@ -334,3 +334,37 @@ body{
 }
 
 // Aqui acaban los containers
+
+
+// Aqui empieza grid
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  @include respond-to($md-port){
+    grid-template-columns: repeat(1,1fr);
+  }
+  &__card{
+    border: 1px solid $color-black;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  &__card__title{
+    @extend .card__title;
+  }
+  &__card__text--content{
+    @extend .card__text--content;
+  }
+  &__card__button{
+    @extend .card__button;
+  }
+  &__card__button:hover{
+    @include button--hover;
+  }
+}
